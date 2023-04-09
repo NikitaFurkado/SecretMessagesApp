@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+                android:layout_width="410dp"
+                android:layout_height="213dp"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:ems="10"
+                android:id="@+id/txtOut" tools:ignore="SpeakableTextPresentCheck"
+                android:layout_alignParentStart="true" android:layout_marginStart="0dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="331dp"
+        />
+        <TextView
+                android:text="Furkado's Secret Messages App"
+                android:layout_width="match_parent"
+                android:layout_height="74dp" android:id="@+id/textView"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" android:textStyle="bold"/>
+        <EditText
+                android:layout_width="410dp"
+                android:layout_height="213dp"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:ems="10"
+                android:id="@+id/txtIn" tools:ignore="SpeakableTextPresentCheck"
+                android:layout_alignParentStart="true" android:layout_marginStart="1dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="74dp"
+                android:text="а Secret messages \n are so cool, \n aren't they?"/>
+        <SeekBar
+                android:layout_width="167dp"
+                android:layout_height="40dp" android:layout_alignParentStart="true"
+                android:layout_marginStart="1dp" android:layout_alignParentTop="true" android:layout_marginTop="288dp"
+                android:id="@+id/seekBar"/>
+        <TextView
+                android:text="Key:"
+                android:layout_width="51dp"
+                android:layout_height="43dp" android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" android:layout_marginEnd="190dp" android:layout_marginTop="289dp"
+                android:id="@+id/textView2" android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+        <EditText
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="140dp"
+                android:layout_alignParentBottom="true" android:layout_marginBottom="403dp"
+                android:id="@+id/txtKey" android:text="13" tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+                android:text="Encode/Decode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" android:layout_marginEnd="1dp" android:layout_marginTop="283dp"
+                android:id="@+id/button"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
